@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.quiz-container {
+  min-height: 100vh;
+  background: linear-gradient(270deg, #6a11cb, #2575fc, #ff6b6b, #ffcc5c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quiz-card {
+  width: 500px;
+}
+
+
+.header-navbar {
+  height: 60px;
+  /* Giữ header có kích thước cố định */
+  padding: 10px 0;
+}
+
+.logo-img {
+  width: 50px;
+  /* Điều chỉnh kích thước logo */
+  height: auto;
+  max-height: 50px;
+  object-fit: contain;
+  /* Đảm bảo logo không bị méo */
+}
+
+.question-image {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.answer-btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.answer-btn:hover {
+  background-color: #0056b3;
+}
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
