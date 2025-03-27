@@ -1,0 +1,114 @@
+/* Định dạng toàn bộ trang */
+body {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  font-family: 'Poppins', sans-serif;
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* Căn chỉnh tiêu đề */
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Màu tiêu đề phụ */
+h4 {
+  color: #b89b72;
+  /* Màu be nhẹ nhàng */
+}
+
+/* Căn giữa App */
+.App {
+  text-align: center;
+  padding: 40px 15px;
+}
+
+/* Form container */
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+
+/* Định dạng form */
+form {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+}
+
+/* Label */
+label {
+  font-weight: bold;
+  color: #6c757d;
+}
+
+/* Input & Select */
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0 12px;
+  border: 1px solid #d1d3d4;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #444;
+}
+
+input::placeholder {
+  color: #999;
+}
+
+/* Hiển thị lỗi */
+.invalid-feedback {
+  color: #d9534f;
+  font-size: 0.9em;
+}
+
+/* Checkbox */
+.form-check label {
+  color: #3b8acb;
+}
+
+/* Nút Gửi */
+button {
+  width: 100%;
+  background: linear-gradient(to right, #1cf1c3, #07ff31);
+  color: #0bc727;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #a0c4b3, #ccd5ae);
+  transform: scale(1.03);
+}
+
+/* Căn giữa alert */
+.alert {
+  text-align: center;
+  background: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}

@@ -1,0 +1,13 @@
+.app {
+  text-align: center;
+  background-color: #f3e5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.animal-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}

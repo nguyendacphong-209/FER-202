@@ -1,0 +1,32 @@
+.animal-card {
+    background: #ffccbc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.animal-card h2 {
+    color: #d32f2f;
+}
+
+.animal-card button {
+    background: #d81b60;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.animal-card button:hover {
+    background: #ad1457;
+}
+
+.animal-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}

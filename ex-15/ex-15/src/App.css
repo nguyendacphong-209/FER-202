@@ -1,0 +1,211 @@
+/* ======= Cấu trúc tổng thể ======= */
+.App {
+  text-align: center;
+}
+
+/* Căn giữa nội dung */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(270deg, #ff0000, #ff7f00, #6e6e4f, #77aa77, #0000ff, #4b0082, #8b00ff);
+  background-size: 400% 400%;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  animation: gradientAnimation 10s infinite linear;
+}
+
+/* Animation gradient chuyển động */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 80% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.quiz-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  width: 500px;
+  max-width: 90%;
+  /* Tránh lỗi trên màn hình nhỏ */
+  text-align: center;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.5s ease-in-out;
+  backdrop-filter: blur(10px);
+}
+
+
+/* Tiến trình làm bài */
+.progress-bar {
+  height: 12px;
+  border-radius: 6px;
+  background: #ffdd57;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Câu hỏi hiển thị */
+.quiz-question {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.option-btn {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  color: black !important;
+  /* Đảm bảo chữ luôn màu đen */
+  background-color: white !important;
+  /* Đảm bảo nền trắng */
+  border: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.option-btn:hover {
+  background-color: #f8f9fa !important;
+  color: black !important;
+}
+
+.option-btn.correct {
+  background-color: #28a745 !important;
+  /* Màu xanh lá cho đáp án đúng */
+  color: white !important;
+  border-color: #28a745;
+}
+
+.option-btn.wrong {
+  background-color: #dc3545 !important;
+  /* Màu đỏ cho đáp án sai */
+  color: white !important;
+  border-color: #dc3545;
+}
+
+/* Khi người dùng đã chọn một đáp án */
+.option-btn.selected {
+  background: rgba(255, 255, 255, 0.4);
+  font-weight: bold;
+}
+
+
+
+/* ======= Đồng hồ đếm ngược ======= */
+.timer {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.timer.warning {
+  color: #ff3d00;
+  animation: blink 0.8s infinite alternate;
+}
+
+/* ======= Nút Next Question ======= */
+.next-btn {
+  margin-top: 20px;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 12px;
+  background: #00e676;
+  border: none;
+  font-weight: bold;
+  color: white;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.next-btn:hover {
+  background: #00c853;
+  transform: scale(1.05);
+}
+
+/* ======= Hiệu ứng fade in ======= */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hiệu ứng nhấp nháy khi gần hết thời gian */
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.5;
+  }
+}
+
+/* ======= Danh sách Item ======= */
+.item-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* ======= Card chứa Item ======= */
+.item-card {
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+  padding: 20px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Tên Item */
+.item-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffdd57;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* ======= Nút trong Item ======= */
+.item-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.item-buttons button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.item-buttons button:hover {
+  transform: scale(1.1);
+}

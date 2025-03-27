@@ -1,0 +1,146 @@
+/* App.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.event-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.bg-blue-500 {
+  background-color: #007bff;
+}
+
+.bg-blue-500:hover {
+  background-color: #0056b3;
+}
+
+.bg-red-500 {
+  background-color: #dc3545;
+}
+
+.bg-red-500:hover {
+  background-color: #a71d2a;
+}
+
+.bg-gray-500 {
+  background-color: #6c757d;
+}
+
+.bg-gray-500:hover {
+  background-color: #545b62;
+}
+
+
+
+/* css cua render and commit demo */
+.event-container {
+  padding: 16px;
+  text-align: center;
+}
+
+.event-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.event-count {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.event-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.increase-button {
+  background-color: #007bff;
+}
+
+.increase-button:hover {
+  background-color: #0056b3;
+}
+
+.decrease-button {
+  background-color: #dc3545;
+}
+
+.decrease-button:hover {
+  background-color: #a71d2a;
+}
+
+.reset-button {
+  background-color: #348a26;
+}
+
+.reset-button:hover {
+  background-color: #162d13;
+}
+
+
+.snapshot-button {
+  background-color: #ffc107;
+  color: black;
+}
+
+.snapshot-button:hover {
+  background-color: #e0a800;
+}
+
+.restore-button {
+  background-color: #28a745;
+}
+
+.restore-button:hover {
+  background-color: #218838;
+}
